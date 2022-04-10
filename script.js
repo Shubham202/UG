@@ -76,6 +76,8 @@ option.forEach(e => {
         rw();
         writePlantData(e.innerHTML);
 	slider.value = 50;
+        percent.innerHTML = slider.value + "%";
+        writeWaterPercent(slider.value);
     });
 });
 
