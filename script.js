@@ -38,7 +38,6 @@ let plant1 = document.querySelector(".plant1");
 let back = document.querySelector(".back");
 let slider = document.querySelector(".slider");
 let percent = document.querySelector(".percent");
-let load = document.querySelector(".load");
 
 //Reading and writing firebase data
 const rw = () => {
@@ -53,14 +52,6 @@ const rw = () => {
 }
 
 rw();
-
-setTimeout(() => {
-    load.style.opacity = "0";
-}, 1500);
-
-setTimeout(() => {
-    load.style.display = "none";
-}, 2500);
 
 block[0].addEventListener("click", () => {
     section1.classList.add("hide");
