@@ -75,6 +75,7 @@ option.forEach(e => {
         select.classList.add("hide");
         rw();
         writePlantData(e.innerHTML);
+	slider.value = 50;
     });
 });
 
