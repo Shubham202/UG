@@ -85,7 +85,7 @@ option.forEach(e => {
 //Water now button
 status.addEventListener("click", () => {
     set(ref(db, "Plant/Status"), {
-        status: True
+        status: "True"
     });
 })
 
