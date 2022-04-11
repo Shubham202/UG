@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#317EFB"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UG - Urban Garden</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#317EFB"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UG - Urban Garden</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json">
-  </head>
-  <body>
-    <div class="title">
-      <h1 class="heading">Urban <span class="green">Garden</span></h1>
-    </div>
-    <div class="plants">
-      <div class="plant block">
-        <img src="./assets/mongodb.png" alt="" />
-        <h6 class="plant1">Plant 1</h6>
-      </div>
-      <!-- <div class="plant block">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="manifest" href="manifest.json" />
+    </head>
+    <body>
+        <div class="title">
+            <h1 class="heading">Urban <span class="green">Garden</span></h1>
+        </div>
+        <div class="plants">
+            <div class="plant block">
+                <img src="./assets/mongodb.png" alt="" />
+                <h6 class="plant1">Plant 1</h6>
+            </div>
+            <!-- <div class="plant block">
             <img src="./assets/mongodb.png" alt="">
             <h6 class="plant2">Plant 2</h6>
         </div>
@@ -27,39 +27,47 @@
             <img src="./assets/mongodb.png" alt="">
             <h6 class="plant3">Plant 3</h6>
         </div> -->
-      <div class="block">
-        <div class="add-icon">
-          <h1 class="add">+</h1>
+            <div class="block">
+                <div class="add-icon">
+                    <h1 class="add">+</h1>
+                </div>
+                <h6>Add More</h6>
+            </div>
         </div>
-        <h6>Add More</h6>
-      </div>
-    </div>
 
-    <div class="indivisual-plant hide">
-      <div class="plant-name">Plant 1</div>
-      <button class="type">Change Type</button>
-      <div class="text">water Percentage</div>
-      <span class="percent"></span>
-      <div class="slide">
-        <div class="slidecontainer">
-          <input type="range" min="0" max="100" value="50" class="slider" id="myRange"/>
+        <div class="indivisual-plant hide">
+            <div class="plant-name">Plant 1</div>
+            <button class="type">Change Type</button>
+            <button class="status">Water now</button>
+            <div class="text">water Percentage</div>
+            <span class="percent"></span>
+            <div class="slide">
+                <div class="slidecontainer">
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="50"
+                        class="slider"
+                        id="myRange"
+                    />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="select hide">
-      <div class="options">
-        <div class="option lotus">Lotus</div>
-        <div class="option rose">Rose</div>
-        <div class="option cactus">Cactus</div>
-        <div class="option periwinkle borderless">Periwinkle</div>
-      </div>
-    </div>
+        <div class="select hide">
+            <div class="options">
+                <div class="option lotus">Lotus</div>
+                <div class="option rose">Rose</div>
+                <div class="option cactus">Cactus</div>
+                <div class="option periwinkle borderless">Periwinkle</div>
+            </div>
+        </div>
 
-    <div class="back hide">
-      <img src="./assets/arrow.png" alt="back" style="width: 45px" />
-    </div>
+        <div class="back hide">
+            <img src="./assets/arrow.png" alt="back" style="width: 45px" />
+        </div>
 
-    <script type="module" src="./script.js"></script>
-  </body>
+        <script type="module" src="./script.js"></script>
+    </body>
 </html>
