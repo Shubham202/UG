@@ -38,6 +38,7 @@ let plant1 = document.querySelector(".plant1");
 let back = document.querySelector(".back");
 let slider = document.querySelector(".slider");
 let percent = document.querySelector(".percent");
+let status = document.querySelector(".status");
 
 //Reading and writing firebase data
 const rw = () => {
@@ -75,11 +76,18 @@ option.forEach(e => {
         select.classList.add("hide");
         rw();
         writePlantData(e.innerHTML);
-	slider.value = 50;
+        slider.value = 50;
         percent.innerHTML = slider.value + "%";
         writeWaterPercent(slider.value);
     });
 });
+
+//Water now button
+status.addEventListener("click", () => {
+    set(ref(db, "Plant/Status"), {
+        status: True
+    });
+})
 
 //Slider settings
 percent.innerHTML = slider.value + "%";
@@ -95,7 +103,5 @@ if ("serviceWorker" in navigator) {
             .register("/serviceWorker.js")
             .then(res => console.log("service worker registered"))
             .catch(err => console.log("service worker not registered", err));
-// 	navigator.serviceWorkerContainer
-// 	    .register('service-worker.js')
     });
 }
