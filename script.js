@@ -82,13 +82,6 @@ option.forEach(e => {
     });
 });
 
-//Water now button
-status.addEventListener("click", () => {
-    set(ref(db, "Plant/Status"), {
-        status: "True"
-    });
-})
-
 //Slider settings
 percent.innerHTML = slider.value + "%";
 slider.oninput = function () {
